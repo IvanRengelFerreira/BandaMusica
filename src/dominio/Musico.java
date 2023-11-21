@@ -1,15 +1,18 @@
 package dominio;
-
-public abstract class  Musico {
+public abstract class Musico extends Participante {
     
-    protected String nombre;
     protected String instrumento;
-    protected double salario;
-
-    public Musico(String nombre, String instrumento, double salarioBase) {
-        this.nombre = nombre;
+    
+    public Musico(String nombre, String instrumento) {
+        super(nombre);
         this.instrumento = instrumento;
-        this.salario = salarioBase;
     }
+    
+    public abstract void setInstrumento(String Instrumento);
+    
+    public abstract String getInstrumento();
+       
+   
+    
 
 }

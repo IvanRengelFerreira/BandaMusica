@@ -19,7 +19,7 @@ public class Principal {
         // Añadir participantes a la primera actuación
         Director dir = new Director("José García López");
         act1.annadirParticipante(dir);
-        MusicoSocio msc1 = new MusicoSocio("Antonio López Suárez", "clarinete", 28534);
+        MusicoSocio msc1 = new MusicoSocio("Antonio López Suárez", "clarinete", (28534));
         act1.annadirParticipante(msc1);
         MusicoRefuerzo msr1 = new MusicoRefuerzo("Juan Jaén Bernal", "tuba", new BigDecimal(121));
         act1.annadirParticipante(msr1);
