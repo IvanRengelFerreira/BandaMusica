@@ -1,12 +1,14 @@
 package dominio;
 
+
 import java.time.LocalDate;
 import java.util.ArrayList;
 
-public class Actuacion {
+public class Actuacion  {
 
     private ArrayList<Participante> participantes;
     private LocalDate fecha;
+    
 
     public Actuacion(LocalDate fecha) {
     this.fecha = fecha;
@@ -31,8 +33,12 @@ public class Actuacion {
         }
     }
 
-    public String toString(){
-        return "Fecha de la actuacion: "+fecha+"\\n" + //
-                participantes.toString() ;
+    public String toString() {
+        String result = "Fecha de la actuacion: " + fecha + "\n";
+        for (Participante participante : participantes) {
+            result += participante.toString() + "\n";
+        }
+        return result;
     }
+    
 }

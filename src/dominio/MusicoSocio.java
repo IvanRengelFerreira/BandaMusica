@@ -26,7 +26,7 @@ public class MusicoSocio extends Musico {
     }
 
     public String toString(){
-        return "Nombre del Musico: "+nombre+"Instrumento del Musico: "+instrumento+"Numero de socio del Musico: "+nSocio;
+        return "Nombre del Musico: "+nombre+" Instrumento del Musico: "+instrumento+" Numero de socio del Musico: "+nSocio;
     }
 
     public  void setNombre(String nombre){

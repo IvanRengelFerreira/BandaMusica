@@ -1,6 +1,8 @@
 package dominio;
 
-public abstract class Participante {
+import java.io.Serializable;
+
+public abstract class Participante implements Serializable {
     protected String nombre;
 
     public Participante(String nombre) {

@@ -6,7 +6,7 @@ public class MusicoRefuerzo extends Musico{
 
     private BigDecimal salario;
 
-    public MusicoRefuerzo(String instrumento, String nombre, BigDecimal salario) {
+    public MusicoRefuerzo(String nombre, String instrumento, BigDecimal salario) {
         super(nombre, instrumento);
         this.salario = salario;
     }
@@ -36,7 +36,7 @@ public class MusicoRefuerzo extends Musico{
     }
 
     public String toString(){
-        return "Nombre del Musico: "+nombre+"Instrumento del Musico: "+instrumento+"Salario del Musico: ";
+        return "Nombre del Musico: "+nombre+" Instrumento del Musico: "+instrumento+" Salario del Musico: "+salario+"$";
     }
 
 

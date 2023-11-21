@@ -2,7 +2,7 @@ package dominio;
 
 import java.util.ArrayList;
 
-public class BandaMusica {
+public class BandaMusica  {
 
     private String nombre;
     private ArrayList<Actuacion> act;
@@ -33,8 +33,26 @@ public class BandaMusica {
         }
     }
 
-    public String toString(){
-        return nombre + "\n"+act.toString();
+    public String toString() {
+        String result = nombre + "\n";
+        for (Actuacion a : act) {
+            result += a.toString() + "\n";
+        }
+        return result;
     }
 
+    public Actuacion getActuacion(int i){
+        if (i >= 0 && i < act.size()) {
+            return act.get(i);
+        } else {
+            System.out.println("Índice fuera de rango");
+            return null;
+        }
+    }
+
+    public int size() {
+        return act.size();
+    }
+    
+    
 }
